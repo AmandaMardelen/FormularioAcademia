@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"  href="Style.css" media="screen">
+
+        <title>Cadastro Academia</title>
+    </head>
+
+    <body>  
+
+        <form>
+            <h1 id="titulo">Cadastro de Alunos 💪 </h1>
+            <p id="subtitulo">Complete suas informações e dê o primeiro passo na sua jornada fitness! 🏋️‍♂️</p>
+            <br>
+        
+
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong> Quem é Você?(Tipo de usuario)</strong></label>
+                <label>
+                    <input type="radio" name="tipoUsuario" value="Aluno" checked> Aluno
+                </label>
+                <label>
+                    <input type="radio" name="tipoUsuario" value="Personal"> Personal Trainer
+                </label>
+              </div>
+
+            <div class="campo">
+                <label for="Objetivo"><strong>Qual seu Objetivo?</strong></label>
+                <select id="Objetivo" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Emagrecimento</option>
+                  <option>Ganho de Massa(Hipertrofia)</option>
+                  <option>Condicionamneto Físico</option>
+                  <option>Saúde e Bem estar </option>
+                  <option>Outro</option>
+
+                </select>
+            </div>
+            <div class="nivel"> 
+                <label><strong>Nivel Atual </strong></label>
+                <label>
+                    <input type="radio" name="nivel" value="Iniciante" checked> Iniciante
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="Intermediario"> Intermediario
+                </label>
+                <label>
+                  <input type= "radio" name="nivel" value="Avançado"> Avançado
+                </label>
+              </div>
+
+
+            <fieldset class="grupo">
+                <div id="check">
+
+                    <label><strong>Atividades que mais gosta:</strong></label><br><br>
+                    <input type="checkbox" id="Atividade1" name="Atividade1" value="Musculação">
+                    <label for="Atividade1"> Musculação</label>
+                    <input type="checkbox" id="Atividade2" name="Atividade2" value="Funcional">
+                    <label for="Atividade2">Funcional</label>
+                    <input type="checkbox" id="Atividade3" name="Atividade3" value="Crossfit">
+                    <label for="Atividade3"> Crossfit</label>
+                    <input type="checkbox" id="Atividade4" name="Atividade4" value="Pilates">
+                    <label for="Atividade4"> Pilates</label>
+                    <input type="checkbox" id="Atividade5" name="Atividade5" value="Corrida">
+                    <label for="Atividade5"> Corrida</label>
+                    <input type="checkbox" id="Atividade6" name="Atividade6" value="Dança">
+                    <label for="tecnologia6"> Dança</label>
+                     <input type="checkbox" id="Atividade7" name="Atividade7" value="Muay thai">
+                    <label for="tecnologia7"> Muay Thai</label>
+                   
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Conte um pouco mais sobre o que deseja alcançar: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+

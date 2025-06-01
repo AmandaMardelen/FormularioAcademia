@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: 'Poppins', sans-serif;
+    color: #380B61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+#titulo {
+    text-align: center;
+    color: #380B61;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+#subtitulo {
+    text-align: center;
+    color: #59429d;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+fieldset.grupo .campo:last-child {
+    margin-right: 0;
+}
+
+.grupo:before,
+.grupo:after {
+    content: "";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #59429d;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.campo textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.campo input[type="radio"],
+.campo input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background-color: #E0E0F8;
+    outline: none;
+}
+
+.botao {
+    font-size: 1.2em;
+    background-color: #59429d;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #3a206e;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao,
+select {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    fieldset.grupo .campo {
+        width: 100%;
+        margin-right: 0;
+    }
+}
